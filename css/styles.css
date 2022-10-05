@@ -1,0 +1,200 @@
+/* color 1: #7D6E83  escuro
+   color 2: #D0B8A8
+   color 3: #DFD3C3
+   color 4: #F8EDE3  claro
+
+*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  color: #40514e;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  color: #434747;
+}
+
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+  color: #7d6e83;
+  font-weight: normal;
+}
+
+h3 {
+  color: #7d6e83;
+}
+
+a {
+  color: #56455c;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+p {
+  line-height: 2;
+}
+
+hr {
+  border: dotted #f8ede3 8px;
+  border-bottom: none;
+  width: 8%;
+  margin: 80px auto;
+}
+
+.top-container {
+  background-color: #f8ede3;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  padding: 50px 0 50px;
+  background-color: #7d6e83;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.frontend-img,
+.design-img {
+  padding: 20px;
+  background-color: #dfd3c3;
+  border-radius: 10%;
+}
+
+.frontend-img {
+  float: left;
+  margin-right: 30px;
+}
+
+.design-img {
+  float: right;
+  margin-left: 30px;
+}
+
+.profile-img {
+  padding: 10px;
+  background-color: #dfd3c3;
+  border-radius: 50%;
+}
+
+.paragraph {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-message {
+  width: 50%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background-color: #7d6e83;
+  border-radius: 5px;
+  color: #eaf6f6;
+  padding: 20px 40px;
+  cursor: pointer;
+  letter-spacing: 0.15rem;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #dfd3c3;
+  color: #7d6e83;
+  transition: all 0.3s;
+}
+
+.copy {
+  color: #eaf6f6;
+  padding: 20px 0;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .top-cloud {
+    position: relative;
+    right: 0px;
+    top: 0px;
+  }
+
+  .bottom-cloud {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .middle-container {
+    margin: 50px 0;
+  }
+
+  hr {
+    margin: 40px auto;
+  }
+
+  h2 {
+    padding-bottom: 0px;
+  }
+
+  .skill-row {
+    text-align: center;
+    margin: 80px auto 80px auto;
+  }
+
+  .img-mountain {
+    width: 80%;
+  }
+
+  .profile-img {
+    width: 30%;
+  }
+
+  .frontend-img {
+    float: none;
+    margin-right: 0px;
+    width: 40%;
+  }
+
+  .design-img {
+    float: none;
+    margin-left: 0px;
+    width: 40%;
+  }
+}
+
+/* position absolute é relativa ao PRIMEIRO pai com uma position diferente da default, caso não ache ninguém, será relativo ao body */
